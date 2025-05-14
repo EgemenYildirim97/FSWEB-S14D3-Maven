@@ -43,7 +43,7 @@ public class MainTest {
         carSkeleton = new CarSkeleton("Test", "test");
         electricCar = new ElectricCar("Test", "test", 10, 5);
         gasPoweredCar = new GasPoweredCar("Test", "test", 10, 4);
-        hybridCar = new HybridCar("Test", "test", 10, 5, 4);
+        hybridCar = new HybridCar("Test", "test", 10, 5,4);
     }
 
     @DisplayName("Car sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
@@ -146,7 +146,7 @@ public class MainTest {
         assertThat(hybridCar.getName(), instanceOf(String.class));
         assertThat(hybridCar.getDescription(), instanceOf(String.class));
         assertThat(hybridCar.getCylinders(), instanceOf(Integer.class));
-        assertThat(hybridCar.getAvgKmPerLitre(), instanceOf(Double.class))
+        assertThat(hybridCar.getAvgKmPerLitre(), instanceOf(Double.class));
         assertThat(hybridCar.getBatterySize(), instanceOf(Integer.class));
     }
 
